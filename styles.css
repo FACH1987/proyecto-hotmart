@@ -72,6 +72,12 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
   .gallery-card, .gallery-card-small { min-height: 225px; margin-top: 0; }
 }
 
+.hero-image-frame { height: auto; aspect-ratio: 1725 / 978; }
+.hero-image-frame img { object-fit: contain; background: #20201c; }
+@media (max-width: 480px) {
+  .hero-image-frame { height: auto; }
+}
+
 .feature-image { min-height: 0; display: flex; align-items: center; }
 .feature-image img { display: block; height: auto; min-height: 0; object-fit: contain; }
 .gallery-card, .gallery-card-large, .gallery-card-small { min-height: 0; height: auto; align-self: start; }
